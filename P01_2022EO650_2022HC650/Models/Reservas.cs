@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace P01_2022EO650_2022HC650.Models
 {
-    public class Reserva
+    public class Reservas
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -31,7 +31,7 @@ namespace P01_2022EO650_2022HC650.Models
         public string Estado { get; set; } = "Activa";
 
         [ForeignKey("IdUsuario")]
-        public Usuario Usuario { get; set; }
+        public Usuarios Usuario { get; set; }
 
         [ForeignKey("IdEspacio")]
         public EspaciosParqueo EspacioParqueo { get; set; }

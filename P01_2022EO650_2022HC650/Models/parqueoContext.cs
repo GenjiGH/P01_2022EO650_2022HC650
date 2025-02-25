@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace P01_2022EO650_2022HC650.Models
 {
@@ -9,10 +10,10 @@ namespace P01_2022EO650_2022HC650.Models
 
         }
 
-        public DbSet<Sucursal> sucursal { get; set; }
-        public DbSet<Usuario> usuario { get; set; }
-        public DbSet<EspaciosParqueo> espaciosParqueos { get; set; }
-        public DbSet<Reserva> reserva { get; set; }
+        public DbSet<Sucursales> Sucursales { get; set; }
+        public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<EspaciosParqueo> EspaciosParqueo { get; set; }
+        public DbSet<Reservas> Reservas { get; set; }
 
     }
 }

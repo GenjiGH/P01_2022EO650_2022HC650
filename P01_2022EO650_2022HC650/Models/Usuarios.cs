@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace P01_2022EO650_2022HC650.Models
 {
-    public class Usuario
+    public class Usuarios
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -22,6 +22,10 @@ namespace P01_2022EO650_2022HC650.Models
 
         [Required]
         public string Contrasena { get; set; }
+
+        [Required]
+        [StringLength(20)]
+        public string Rol { get; set; }
 
     }
 }

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace P01_2022EO650_2022HC650.Models
 {
-    public class Sucursal
+    public class Sucursales
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -28,6 +28,6 @@ namespace P01_2022EO650_2022HC650.Models
         public int NumEspaciosDisponibles { get; set; } = 0;
 
         [ForeignKey("IdAdministrador")]
-        public Usuario Administrador { get; set; }
+        public Usuarios Administrador { get; set; }
     }
 }

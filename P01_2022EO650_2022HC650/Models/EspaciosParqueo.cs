@@ -28,6 +28,6 @@ namespace P01_2022EO650_2022HC650.Models
         public string Estado { get; set; } = "Disponible";
 
         [ForeignKey("IdSucursal")]
-        public Sucursal Sucursal { get; set; }
+        public Sucursales Sucursal { get; set; }
     }
 }
